@@ -1,9 +1,15 @@
 #Challenge
 
+Test Strategy - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_strategy.md
+
+Test Plan - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_plan.md
+
+Test cases - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_cases.md
+
 Project - https://github.com/aswin-g/bngs_challenge/projects/1
 
 
-## Pull requests:
+## Pull requests: 🎯
 
 1. Challenge Planning - Test Strategy, Test plan and Test cases
 
@@ -13,9 +19,12 @@ https://github.com/aswin-g/bngs_challenge/pull/1
 
 https://github.com/aswin-g/bngs_challenge/pull/2
 
+3. UI Test Automation using Cypress
+
+https://github.com/aswin-g/bngs_challenge/pull/3
 
 
-# Load Test Results
+# Load Test Results 🚀
 
 ## k6 run load_search_1_virtual_user.js 
 
