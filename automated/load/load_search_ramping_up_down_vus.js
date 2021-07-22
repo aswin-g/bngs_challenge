@@ -10,6 +10,5 @@ export let options = {
 };
 export default function () {
   http.get('https://www.bunnings.com.au/search/products?q=hammer&sort=BoostOrder&page=1');
-  check(res, { 'status was 200': (r) => r.status == 200 });
   sleep(1);
 }
