@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cypress": "^8.0.0"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.9.9"
+  }
+}
