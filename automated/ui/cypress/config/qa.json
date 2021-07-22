@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://www.qa.bunnings.com.au/",
+    "env": {
+      "platform": "qa",
+      "search recommendation api endpoint" : "https://api.qa.bunnings.com.au/v1/search/recommendation"
+    }
+  }

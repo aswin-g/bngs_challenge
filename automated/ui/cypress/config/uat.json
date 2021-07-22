@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://www.uat.bunnings.com.au/",
+    "env": {
+      "platform": "uat",
+      "search recommendation api endpoint" : "https://api.uat.bunnings.com.au/v1/search/recommendation"
+    }
+  }
