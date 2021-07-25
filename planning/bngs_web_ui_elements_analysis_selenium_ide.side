@@ -1,0 +1,302 @@
+{
+  "id": "3ab486df-408d-4237-a2ec-568e9daa1005",
+  "version": "2.0",
+  "name": "Bunnings Automation Challenge",
+  "url": "https://www.bunnings.com.au",
+  "tests": [{
+    "id": "6ac6f6c0-e5b9-4056-b29f-b25952546e54",
+    "name": "add to cart",
+    "commands": [{
+      "id": "ece6d5a6-0228-494d-9246-2ebd41c82f1f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a51b727d-4f2f-4d74-9704-9cdd2dbfa0d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6022b2e-d7ad-4e90-bbfc-a0a9ed513bff",
+      "comment": "",
+      "command": "click",
+      "target": "id=custom-css-outlined-input",
+      "targets": [
+        ["id=custom-css-outlined-input", "id"],
+        ["name=q", "name"],
+        ["css=#custom-css-outlined-input", "css:finder"],
+        ["xpath=//input[@id='custom-css-outlined-input']", "xpath:attributes"],
+        ["xpath=//form[@id='header-search']/label/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84e037e-f67b-45eb-b2f3-68545e432413",
+      "comment": "",
+      "command": "type",
+      "target": "id=custom-css-outlined-input",
+      "targets": [
+        ["id=custom-css-outlined-input", "id"],
+        ["name=q", "name"],
+        ["css=#custom-css-outlined-input", "css:finder"],
+        ["xpath=//input[@id='custom-css-outlined-input']", "xpath:attributes"],
+        ["xpath=//form[@id='header-search']/label/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hammer"
+    }, {
+      "id": "ed7de103-0107-40c3-aa20-12de775dcd8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=rect:nth-child(1)",
+      "targets": [
+        ["css=rect:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e5f0868-9b3a-4f5a-962d-bf39960b6ee7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.SearchProductTilestyle__SearchProductTileContainer-sc-7jrh24-4:nth-child(1) .product-tile-image",
+      "targets": [
+        ["css=.SearchProductTilestyle__SearchProductTileContainer-sc-7jrh24-4:nth-child(1) .product-tile-image", "css:finder"],
+        ["xpath=//img[@alt='Product image']", "xpath:img"],
+        ["xpath=//div[@id='__next']/main/div/div[3]/div/div[4]/article/a/div[2]/div/div/a/figure/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e23319b-61a0-4584-8604-9d7425d6ad92",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e5642a0-5f6a-43c4-ba68-741a6db21d98",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.SearchProductTilestyle__SearchProductTileContainer-sc-7jrh24-4:nth-child(1) .product-tile-image",
+      "targets": [
+        ["css=.SearchProductTilestyle__SearchProductTileContainer-sc-7jrh24-4:nth-child(1) .product-tile-image", "css:finder"],
+        ["xpath=//img[@alt='Product image']", "xpath:img"],
+        ["xpath=//div[@id='__next']/main/div/div[3]/div/div[4]/article/a/div[2]/div/div/a/figure/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d609fc-dcf4-47d7-bbc1-22eb5d4edf32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SearchProductTilestyle__SearchProductTileContainer-sc-7jrh24-4:nth-child(1) .SearchProductTilestyle__BottomCartContainer-sc-7jrh24-7 .MuiButtonBase-root",
+      "targets": [
+        ["css=.SearchProductTilestyle__SearchProductTileContainer-sc-7jrh24-4:nth-child(1) .SearchProductTilestyle__BottomCartContainer-sc-7jrh24-7 .MuiButtonBase-root", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/main/div/div[3]/div/div[4]/article/a/div[3]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add To Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31215cee-ec82-4422-a063-a696ce7f36cd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.subtractQtyButton > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.subtractQtyButton > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c1cbdf-bd1f-444e-9f85-b8187aeda000",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.subtractQtyButton > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.subtractQtyButton > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e0a546d-d4bd-4d24-bb7e-6b9f15800e5b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.reviewBtn",
+      "targets": [
+        ["css=.reviewBtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='confirmation-drawer']/div/div/div/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Review & checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d99617b0-679d-4bb0-a78d-fb2d10b53f27",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.reviewBtn",
+      "targets": [
+        ["css=.reviewBtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='confirmation-drawer']/div/div/div/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Review & checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d606cf79-f311-4d30-964a-dfa3ef6c0527",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reviewBtn",
+      "targets": [
+        ["css=.reviewBtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='confirmation-drawer']/div/div/div/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Review & checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9c2efb-83a9-4ba5-9c78-d52409f61a80",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6a947fc-062b-486e-b409-3122a31bc86d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b42972e2-5cba-49eb-bce8-37d34cd292ba",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,380)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0b35f48-878c-47aa-a5ef-78af976360c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dWRGcs",
+      "targets": [
+        ["css=.dWRGcs", "css:finder"],
+        ["xpath=//div[@id='reviewCartPanel']/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b73ce4e7-5aa6-4884-80e6-12a0d3214747",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProductName:nth-child(1)",
+      "targets": [
+        ["css=.ProductName:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='reviewCartPanel']/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/a/h4", "xpath:idRelative"],
+        ["xpath=//a/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Craftright 8oz/ 226g Steel Claw Hammer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cde327b6-6838-436a-a218-e999dd0a860d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiTab-textColorPrimary:nth-child(2)",
+      "targets": [
+        ["css=.MuiTab-textColorPrimary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/main/div/div[3]/div[2]/div/div/div/div[2]/div[2]/section/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Click & Collect')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f861b072-b717-4d64-88ce-c257f47f7070",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiTab-textColorPrimary:nth-child(2)",
+      "targets": [
+        ["css=.MuiTab-textColorPrimary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/main/div/div[3]/div[2]/div/div/div/div[2]/div[2]/section/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Click & Collect')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c9bd5a6-9148-41c3-82b9-081625044140",
+      "comment": "",
+      "command": "click",
+      "target": "id=icon-cart",
+      "targets": [
+        ["id=icon-cart", "id"],
+        ["linkText=1", "linkText"],
+        ["css=#icon-cart", "css:finder"],
+        ["xpath=//a[@id='icon-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='main-header']/div/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db5eb9d6-bc12-4b65-ba71-106dc6a1693a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=icon-cart",
+      "targets": [
+        ["id=icon-cart", "id"],
+        ["linkText=1", "linkText"],
+        ["css=#icon-cart", "css:finder"],
+        ["xpath=//a[@id='icon-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='main-header']/div/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1024c21a-ab5b-4937-b220-5df346f354e0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=icon-cart",
+      "targets": [
+        ["id=icon-cart", "id"],
+        ["linkText=1", "linkText"],
+        ["css=#icon-cart", "css:finder"],
+        ["xpath=//a[@id='icon-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='main-header']/div/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c8f36d6-c519-4906-9508-79f74602f8d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.orderSummarystyle__StyledOrderSummaryView-sc-biwwjh-0",
+      "targets": [
+        ["css=.orderSummarystyle__StyledOrderSummaryView-sc-biwwjh-0", "css:finder"],
+        ["xpath=//div[@id='__next']/main/div/div[3]/div/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5b4bd20-c515-4c14-8032-d8304c9ab451",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ac6f6c0-e5b9-4056-b29f-b25952546e54"]
+  }],
+  "urls": ["https://www.bunnings.com.au/"],
+  "plugins": []
+}

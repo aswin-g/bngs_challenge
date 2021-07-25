@@ -1,0 +1,19 @@
+{
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 5000,
+    "requestTimeout": 5000,
+    "responseTimeout": 5000,
+    "env": {
+        "browserPermissions": {
+          "geolocation": "allow",
+          "notifications": "allow",
+          "images": "allow",
+          "javascript": "allow",
+          "cookies": "allow",
+          "camera": "block",
+          "microphone": "block",
+          "popups": "ask",
+          "plugins": "ask"
+        }
+      }
+}

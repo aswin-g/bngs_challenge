@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://www.preprod.bunnings.com.au/",
+    "env": {
+      "platform": "preprod",
+      "search recommendation api endpoint" : "https://api.preprod.bunnings.com.au/v1/search/recommendation"
+    }
+  }
