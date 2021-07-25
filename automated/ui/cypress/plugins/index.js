@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+const { cypressBrowserPermissionsPlugin } = require('cypress-browser-permissions')
+ 
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -20,10 +22,17 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 
-  require('@cypress/code-coverage/task')(on, config)
+  //require('@cypress/code-coverage/task')(on, config)
   // include any other plugin code...
 
   // It's IMPORTANT to return the config object
   // with any changed environment variables
+
+  on('task', {
+    failed: require('cypress-failed-log/src/failed')(),
+  })
+
+  config = cypressBrowserPermissionsPlugin(on, config)
+
   return config
 }

@@ -1,8 +1,9 @@
 {
-  "dependencies": {
-    "cypress": "^8.0.0"
-  },
   "devDependencies": {
-    "@cypress/code-coverage": "^3.9.9"
+    "@cypress/code-coverage": "^3.9.9",
+    "cypress": "^8.0.0",
+    "cypress-browser-permissions": "^1.0.5",
+    "cypress-failed-log": "^2.9.2",
+    "cypress-iframe": "^1.0.1"
   }
 }

@@ -2,6 +2,8 @@
 
 # 1. Scope
 
+Assuming the bunnings customers use the following browsers, tablets, iOS and android devices based on the source from product analytics.
+
 Browsers - Safari, Chrome, Firefox, IE - Desktop and Mobile Responsive (iPhone X, Pixel 2XL, iPad Pro and Galaxy Note3)
 
 iOS Devices - iPhone 12 Pro, iPhone X, iPhone 8 Plus
@@ -16,9 +18,14 @@ Tablets - iPad Pro and Galaxy Tab S7
 
 Before picking up card for testing, as part of definition of done, pull request (assuming Github used for version control) to be code reviewed and tests passing in CI pipeline.
 
-Ensure to take hand over with devs before starting testing. Include UX team in handover to receive early feedback to devs.
+Ensure to take hand over with developers before starting testing. 
+Include UX team in handover to receive early feedback to development team.
 
 Exploratory testing can be done in scrum environment and mock server if applicable.
+
+Early feedabck to be provided to the developers.
+
+Bug bashes to be arranged for major releases to include Marketing, UX, Operations and other teams not working on product which would be quite beneficial to receive the early feedback before we cut the release branch.
 
 ## 2.2. Non Functional Testing
 
@@ -40,12 +47,19 @@ https://www.w3.org/WAI/
 https://www.w3.org/standards/webdesign/accessibility
 
 
-# 3. Automated Test Tools
+# 3. Test Tools
 
-UI & Security - Cypress
-API - Postman, Newman
-Load - k6
-Accessibility - https://github.com/GoogleChrome/accessibility-developer-tools
+UI & Security Test automation - Cypress
+
+API Testing - Postman, Newman
+
+Load Testing - k6
+
+Accessibility Testing - https://github.com/GoogleChrome/accessibility-developer-tools
+
+Requirements and bugs - Jira
+
+Documenation - Confluence
 
 # 4. Test Environments
 
@@ -62,24 +76,32 @@ Deployments to be done in the environments only when automated tests passed in C
 Only QA team can progress deployments to Preprod
 Only Operations team can progress deployment to Production
 
-# 6. Release Management
+# 6. Bug Triage
 
-Jira will be used for sprint cards and docuemntion in Confluence.
+Bugs to be raised with defined bug template and based on the severity level to be prioirtised with product owner.
+
+Low and medium level severity bugs in the backlog to be looked in each sprint if any of them to be prioritised in the sprint.
+
+# 7. Release Management
 
 SHA-256 and Version to be noted during each testing phase.
 
-Regression suite to be passed on Preprod environment.
+Business acceptance testing to be done by Product Owner for each story card.
+
+Once the release branch is made, automated regression test suite to be passed in CI pipeline.
+
+Regression automated suite should be passed on Preprod environment.
+
+All the test artifacts of the release to be documented for Change Control Board and provide handover to Operations team for production deployment.
 
 PVT tests to be passed after production deployment.
 
-# 7. Risk Analysis
+# 8. Risk Analysis
 
 List all risks that you can identify and estimate.
 
-Give a clear plan to mitigate the risks.
+Come up with a plan to mitigate the risks as a team.
 
-# 8. Review and Approvals
+# 9. Continuous Improvements
 
-All these activities are reviewed and signed off by the business team, project management, development team, etc.
-
-Summary of review changes should be traced at the beginning of the document along with an approved date, name, and comment
+During retro meetings, look for the activities that could improve better in testing and add items in the backlog.

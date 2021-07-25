@@ -1,4 +1,4 @@
-#Challenge
+# Challenge
 
 Test Strategy - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_strategy.md
 
@@ -9,7 +9,7 @@ Test cases - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_c
 Project - https://github.com/aswin-g/bngs_challenge/projects/1
 
 
-## Pull requests: 🎯
+## Github Pull requests: 🎯
 
 1. Challenge Planning - Test Strategy, Test plan and Test cases
 
@@ -23,6 +23,28 @@ https://github.com/aswin-g/bngs_challenge/pull/2
 
 https://github.com/aswin-g/bngs_challenge/pull/3
 
+## Quick Analysis of web UI elements of the website
+
+https://github.com/aswin-g/bngs_challenge/blob/main/planning/bngs_web_ui_elements_analysis_selenium_ide.side
+
+Video - https://github.com/aswin-g/bngs_challenge/blob/main/planning//bngs_add_to_cart_web_ui_elements_analysis.mov
+
+## How to run UI Tests using Cypress
+
+Steps to run UI tests provided in the below README file.
+
+https://github.com/aswin-g/bngs_challenge/blob/main/automated/ui/README.md
+
+
+## Troubleshooting Failed tests
+
+If test(s) fail, logs,screesnhots and videos will be generated in the folders given below which would be helpful for troubleshooting the failed tests.
+
+Logs - ```/automated/ui/cypress/logs```
+
+Screenshots - ```/automated/ui/cypress/screenshots```
+
+Videos - ```/automated/ui/cypress/videos```
 
 # Load Test Results 🚀
 
@@ -99,6 +121,7 @@ default ✓ [======================================] 10 VUs  30s
      iterations.....................: 90     2.761135/s
      vus............................: 4      min=4      max=10
      vus_max........................: 10     min=10     max=10
+
 
 # Challenge
 
