@@ -1,4 +1,10 @@
-# Top 10 Web Application Security Risks
+# Security Testing
+
+AS part of static code analysis, would be good to have tools like Coverity that scans the th repository code for any language and Snyk to scan the vulnerabilities for repository dependencies.
+
+Also, would be good to cover the inputs for automated tests considering the below top 10 web application security risks.
+
+## Top 10 Web Application Security Risks
 
 Reference - https://owasp.org/www-project-top-ten/
 

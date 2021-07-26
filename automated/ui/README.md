@@ -45,9 +45,11 @@ From project directory, run the below command from the terminal
 
 ## Run Tests
 
+Tests can be run using Chrome, Firefox, Safari and IE browsers. As a 
+
 Goto the directory ```automated/ui/```
 
 Run the below comand from the terminal
 
-```npx cypress open```
+```npx cypress run --browser=chrome```
 

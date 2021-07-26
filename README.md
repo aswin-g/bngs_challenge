@@ -1,5 +1,7 @@
 # Challenge
 
+## Documentation
+
 Test Strategy - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_strategy.md
 
 Test Plan - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_plan.md
@@ -7,6 +9,8 @@ Test Plan - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_pl
 Test cases - https://github.com/aswin-g/bngs_challenge/blob/main/planning/test_cases.md
 
 Project - https://github.com/aswin-g/bngs_challenge/projects/1
+
+
 
 
 ## Github Pull requests: 🎯
@@ -25,7 +29,7 @@ https://github.com/aswin-g/bngs_challenge/pull/3
 
 ## Quick Analysis of web UI elements of the website
 
-https://github.com/aswin-g/bngs_challenge/blob/main/planning/bngs_web_ui_elements_analysis_selenium_ide.side
+Recording of the test using Selenium IDE - https://github.com/aswin-g/bngs_challenge/blob/main/planning/bngs_web_ui_elements_analysis_selenium_ide.side
 
 Video - https://github.com/aswin-g/bngs_challenge/blob/main/planning//bngs_add_to_cart_web_ui_elements_analysis.mov
 
@@ -45,6 +49,77 @@ Logs - ```/automated/ui/cypress/logs```
 Screenshots - ```/automated/ui/cypress/screenshots```
 
 Videos - ```/automated/ui/cypress/videos```
+
+## UI Test automation results
+
+npx cypress run --browser=chrome
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:    8.0.0                                                                              │
+  │ Browser:    Chrome 91 (headless)                                                               │
+  │ Specs:      1 found (add_item_to_cart.js)                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  add_item_to_cart.js                                                             (1 of 1)
+[browserPermissions] permission 'geolocation' => 'allow'
+[browserPermissions] permission 'notifications' => 'allow'
+[browserPermissions] permission 'images' => 'allow'
+[browserPermissions] permission 'javascript' => 'allow'
+[browserPermissions] permission 'cookies' => 'allow'
+[browserPermissions] permission 'camera' => 'block'
+[browserPermissions] permission 'microphone' => 'block'
+[browserPermissions] permission 'popups' => 'ask'
+[browserPermissions] permission 'plugins' => 'ask'
+
+
+  Feature: Add an item to the cart
+    ✓ [BNGS-1031] @regression - As a customer I would like to understand search functionality from placeholder text in any device (10356ms)
+    ✓ [BNGS-1032] @regression - As a customer I would like to see cart is empty before I start shopping (11984ms)
+    ✓ [BNGS-1033] @smoke - As a customer I would like to see the relevant item listed based on the search keyword (10594ms)
+
+
+  3 passing (40s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      3                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     39 seconds                                                                       │
+  │ Spec Ran:     add_item_to_cart.js                                                              │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /Users/aswing/projects/coding_challenges/bngs_challenge/aut    (4 seconds)
+                          omated/ui/cypress/videos/add_item_to_cart.js.mp4                          
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  add_item_to_cart.js                      00:39        3        3        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:39        3        3        -        -        -  
 
 # Load Test Results 🚀
 
