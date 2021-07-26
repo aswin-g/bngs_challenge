@@ -6,7 +6,8 @@ describe('Feature: Add an item to the cart', () => {
       cy.visit('https://www.bunnings.com.au')
     })
 
-    it('[BNGS-1031] @regression - As a customer I would to like to understand search functionality from placeholder text in any device', () => {
+    it('[BNGS-1031] @regression - As a customer I would like to understand search functionality from placeholder text in any device', () => {
+      // We use the `cy.get()` command to get all elements that match the selector.
       
       //Desktop resolution - 1536(width) * 960(height)
       cy.viewport('macbook-16')
@@ -22,19 +23,19 @@ describe('Feature: Add an item to the cart', () => {
     })
 
 
-    it('[BNGS-1032] @regression - As a customer I would to like to see cart is empty before I start shopping', () => {
+    it('[BNGS-1032] @regression - As a customer I would like to see cart is empty before I start shopping', () => {
       
       cy.get('[data-locator="icon-cart"]').click()
 
+      //Assertion on cart empty message
       cy.get('[data-locator="ErrorMessage_EmptyCart"]').should('have.text','Your cart is empty!To add items to your cart and continue shopping, check out our wide range of products that are now available to buy online')
     })
-    
+
   
-    it('[BNGS-1033] @smoke - As a customer I would like to add an item to the cart - @smoke', () => {
+    it('[BNGS-1033] @smoke - As a customer I would like to see the relevant item listed based on the search keyword', () => {
       
-      // We use the `cy.get()` command to get all elements that match the selector.
       //Search input
-      cy.get('#custom-css-outlined-input').click().type('hammer')
+      cy.get('#custom-css-outlined-input').click().type('Hammer')
       cy.get('#crossIcon').click()
       
       //Assertion on URL change for search
@@ -44,28 +45,9 @@ describe('Feature: Add an item to the cart', () => {
       cy.intercept('/v1/events*').as('search')
       cy.wait('@search')
 
-      //Assertions on Search results
+      //Assertion on Search results
       cy.get('[id="searchResultContainer"]').contains('Showing')
       cy.getCookie('kampyleSessionPageCounter').should('exist')
-
-      //Capture the item name which is the first displayed item in the search results list
-      let item_name = "";
-      cy.get('[data-locator^="search-product-tile-title"]').first().then(($title) => {
-        item_name = $title.text();
-      })
-
-      //Add first item to cart
-      cy.get('[data-locator="atcButton"]').should('have.length', 12)
-      cy.get('[data-locator="atcButton"]').first().click()
-
-      //Wait for the item to be added to cart
-      cy.intercept('/v1/carts*').as('addtocart')
-      cy.wait('@addtocart')
-
-      //Review Cart
-      cy.contains('Review & checkout').parent().click()
-
-      //Compare item names from search results first displayed item with the item name in the cart
-      cy.get('[datalocator="ItemForClickCollect_Product_Name"]').should('have.text',item_name)
+      cy.get('[data-locator^="search-product-tile-title"]').first().contains('Hammer')
     })
 })

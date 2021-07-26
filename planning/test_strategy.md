@@ -86,6 +86,8 @@ Low and medium level severity bugs in the backlog to be looked in each sprint if
 
 SHA-256 and Version to be noted during each testing phase.
 
+Story card# to be noted in automated tests for each commit and pull request in Github for tracking the automation coverage.
+
 Business acceptance testing to be done by Product Owner for each story card.
 
 Once the release branch is made, automated regression test suite to be passed in CI pipeline.

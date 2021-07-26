@@ -31,6 +31,8 @@ Tablets - iPad Pro and Galaxy Tab S7
 
 2. Verify cart is empty before shopping
 
+3. Verify relevant item listed based on the search input
+
 3. Verify cart with one product on selecting first item in displayed list
     - [x] Enter text into search box and click on search icon
     - [x] Identify the first item displayed into the search results and add an item into the cart by clicking on to "Add to cart" icon button
@@ -50,8 +52,8 @@ Tablets - iPad Pro and Galaxy Tab S7
     
 6. Verify cookie "lumery.cartCount" retains the count after refreshing the review cart page
 
-7. Verify Cart retains the product whike switching between review cart and add to cart pages
+7. Verify cart retains the product whike switching between review cart and add to cart pages
 
-8. Verify the cart with multiple refresh on each web page in the add to cart journey
+8. Verify cart with multiple refresh on each web page in the add to cart journey
 
 
